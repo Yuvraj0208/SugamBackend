@@ -9,7 +9,7 @@ from .Summarizer import Summarizer
 from .Comikify import Comikify
 from pprint import pprint 
 
-openai_key = "sk-proj-lwx2biAl3STmsb0nFfr8T3BlbkFJlyuJBpx11nsKTnfrnLbW"
+openai_key = "sk-proj-gJzj6oOczr0GNgID4jkXT3BlbkFJbWF67iGAlIMDVkPKKotF"
 
 def index(request):
     return render(request, "index.html")
