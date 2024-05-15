@@ -9,7 +9,7 @@ class GenerateFollowup:
     def start(self, question):
         prompt = f"Give me answer of this Question in {self.language} language: '{question}'\n Use this para for finding the answer: ```{self.original_text}```\n\n"
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="gpt-3.5-turbo",
             prompt=prompt,
             max_tokens=50,  # Adjust the number of tokens as per your needs
             temperature=0.5,  # Adjust the temperature as per your preference
