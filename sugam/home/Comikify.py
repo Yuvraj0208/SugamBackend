@@ -10,7 +10,7 @@ class Comikify:
     def start(self):
         openai.api_key = self.openai_key
         response = openai.Completion.create(
-            engine="text-davinci-002",
+            engine="gpt-3.5-turbo",
             prompt=self.prompt,
             max_tokens=2048,
             n=1,
