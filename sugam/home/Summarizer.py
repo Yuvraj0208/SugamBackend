@@ -8,7 +8,7 @@ class Summarizer:
 
     def start(self):
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="gpt-3.5-turbo",
             prompt=f"Summarize this paragraph & give the output in {self.language} Language: '{self.original_txt}'",
             max_tokens=100,  # Adjust the number of tokens as per your needs
             temperature=0.5,  # Adjust the temperature as per your preference
